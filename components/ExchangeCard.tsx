@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { BadgeCheck } from "lucide-react";
 import type { CSSProperties } from "react";
+import { publicAssetPath } from "@/lib/asset-path";
 
 type ExchangeCardProps = {
   name: string;
@@ -23,6 +24,7 @@ export function ExchangeCard({
   index
 }: ExchangeCardProps) {
   const reduceMotion = useReducedMotion();
+  const resolvedLogoSrc = publicAssetPath(logoSrc);
   const style = {
     "--exchange-from": accentFrom,
     "--exchange-to": accentTo
@@ -40,7 +42,7 @@ export function ExchangeCard({
       <div className="exchange-card__wash" aria-hidden="true" />
       <div className="exchange-card__ghost-logo" aria-hidden="true">
         <Image
-          src={logoSrc}
+          src={resolvedLogoSrc}
           alt=""
           fill
           sizes="360px"
@@ -52,7 +54,7 @@ export function ExchangeCard({
         <div className="flex items-center justify-between gap-3">
           <span className="exchange-card__logo-tile">
             <Image
-              src={logoSrc}
+              src={resolvedLogoSrc}
               alt=""
               width={54}
               height={54}
