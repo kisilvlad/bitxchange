@@ -1,0 +1,14 @@
+{
+  "name": "P2P Merchant Support",
+  "short_name": "P2P Merchant",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#06100d",
+  "background_color": "#06100d",
+  "display": "standalone"
+}
