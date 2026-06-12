@@ -22,20 +22,25 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Download source bundle
         run: |
-          curl -fsSL "https://tmpfiles.org/dl/wKwtnhInHfKe/bitxchange-source.zip" -o /tmp/bitxchange-source.zip
-          echo "b5a08b3c4358fb14ac5db0fc5f6836ffd6afa08019aecf47417d6767267d2eca  /tmp/bitxchange-source.zip" | sha256sum -c -
+          curl -fsSL "https://tmpfiles.org/dl/wXwNnCIdykJ7/bitxchange-source-noworkflow.zip" -o /tmp/bitxchange-source.zip
+          echo "388c702d44d0c145ce00a91855c4f75d9fd9e75e682a02a9202c6eba9ac9a751  /tmp/bitxchange-source.zip" | sha256sum -c -
 
       - name: Unpack project source
         run: |
+          mkdir -p /tmp/bitxchange-bootstrap
+          cp .github/workflows/bootstrap-source.yml /tmp/bitxchange-bootstrap/bootstrap-source.yml
           find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
           unzip -q /tmp/bitxchange-source.zip -d .
-          rm -f .github/workflows/bootstrap-source.yml
+          mkdir -p .github/workflows
+          cp /tmp/bitxchange-bootstrap/bootstrap-source.yml .github/workflows/bootstrap-source.yml
 
       - name: Commit project source
         run: |
