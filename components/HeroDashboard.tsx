@@ -11,6 +11,7 @@ import {
   ShieldCheck,
   Sparkles
 } from "lucide-react";
+import { publicAssetPath } from "@/lib/asset-path";
 import { exchangeCards } from "@/lib/content";
 
 const checklist = [
@@ -120,7 +121,7 @@ export function HeroDashboard() {
               >
                 <div className="dashboard-exchange-chip__logo" aria-hidden="true">
                   <Image
-                    src={exchange.logoSrc}
+                    src={publicAssetPath(exchange.logoSrc)}
                     alt=""
                     width={34}
                     height={34}
