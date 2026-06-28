@@ -17,8 +17,8 @@ export function FinalCTA() {
                 Готові відкрити свій P2P-мерчант?
               </h2>
               <p className="mt-4 max-w-2xl text-base leading-7 text-[color:var(--muted)]">
-                Залиште заявку — підкажемо оптимальну біржу та допоможемо пройти
-                всі етапи запуску.
+                Залиште заявку — оцінимо стартову ситуацію й підкажемо, з якої
+                біржі варто почати.
               </p>
               <p className="mt-5 flex max-w-2xl items-start gap-2 text-xs font-semibold leading-5 text-[color:var(--muted-foreground)]">
                 <ShieldCheck className="mt-0.5 size-4 shrink-0 text-[color:var(--primary)]" />

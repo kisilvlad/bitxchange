@@ -11,8 +11,8 @@ export function Audience() {
       <div className="section-shell">
         <SectionHeading
           eyebrow="Для кого"
-          title="Для кого підходить сервіс"
-          description="Сервіс корисний і для першої подачі, і для команд, які хочуть структурувати процес без зайвого ризику."
+          title="Коли краще не подавати заявку навмання"
+          description="Якщо хочете зрозуміти вимоги до старту до того, як біржа побачить вашу заявку."
         />
 
         <div className="mt-9 grid gap-4 md:grid-cols-2">

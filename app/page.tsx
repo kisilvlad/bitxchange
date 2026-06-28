@@ -13,6 +13,7 @@ import { Pricing } from "@/components/Pricing";
 import { Process } from "@/components/Process";
 import { SectionHeading } from "@/components/SectionHeading";
 import { StickyMobileCTA } from "@/components/StickyMobileCTA";
+import { Testimonials } from "@/components/Testimonials";
 import { UtmCapture } from "@/components/UtmCapture";
 import { pricingPlans, siteConfig } from "@/lib/content";
 
@@ -51,14 +52,15 @@ export default function Home() {
         <Process />
         <Pricing />
         <FAQ />
+        <Testimonials />
         <FinalCTA />
         <section id="lead" className="py-16 sm:py-20">
           <div className="section-shell grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
             <div className="max-w-xl">
               <SectionHeading
                 eyebrow="Заявка на консультацію"
-                title="Розкажіть про ваш акаунт, а ми підкажемо наступний крок"
-                description="Форма коротка: достатньо контакту, бажаної біржі та рівня досвіду. UTM-мітки з рекламного переходу автоматично передаються разом із заявкою."
+                title="Покажіть, з чого стартуємо"
+                description="Достатньо контакту, бажаної біржі та рівня досвіду. Ми повернемось із першим кроком."
               />
               <LegalNotice compact />
             </div>

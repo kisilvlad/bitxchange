@@ -39,10 +39,9 @@ export function Hero() {
             <span className="gradient-text">швидко та без зайвої бюрократії</span>
           </h1>
           <p className="mt-5 max-w-2xl break-words text-[15px] leading-7 text-[color:var(--muted)] [overflow-wrap:anywhere] sm:mt-6 sm:text-lg sm:leading-8">
-            Ми допомагаємо пройти процес відкриття P2P-мерчанта на провідних
-            криптобіржах: Bybit, OKX, WEEX, MEXC та CryptoBot. Консультуємо,
-            готуємо профіль, перевіряємо документи та супроводжуємо процес
-            подачі до фінального рішення платформи щодо статусу мерчанта.
+            Готуємо акаунт, документи й заявку на Bybit, OKX, WEEX, MEXC та
+            CryptoBot. Показуємо слабкі місця до подачі та супроводжуємо процес
+            за правилами платформи.
           </p>
 
           <motion.div

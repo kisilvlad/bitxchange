@@ -73,7 +73,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: "#050505",
-  colorScheme: "dark light"
+  colorScheme: "dark"
 };
 
 export default function RootLayout({
@@ -95,9 +95,8 @@ export default function RootLayout({
             __html: `
               (() => {
                 try {
-                  const stored = localStorage.getItem('bitxchange-theme');
-                  const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-                  const theme = stored === 'light' || stored === 'dark' ? stored : (prefersLight ? 'light' : 'dark');
+                  const stored = localStorage.getItem('bitxchange-theme-choice-v2');
+                  const theme = stored === 'light' || stored === 'dark' ? stored : 'dark';
                   document.documentElement.dataset.theme = theme;
                   document.documentElement.style.colorScheme = theme;
                 } catch {

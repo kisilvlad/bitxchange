@@ -12,7 +12,7 @@ type ThemeContextValue = {
 };
 
 const ThemeContext = createContext<ThemeContextValue | null>(null);
-const STORAGE_KEY = "bitxchange-theme";
+const STORAGE_KEY = "bitxchange-theme-choice-v2";
 
 function getInitialTheme(): Theme {
   if (typeof document !== "undefined") {

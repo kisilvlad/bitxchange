@@ -509,6 +509,25 @@ html[data-theme="light"] .theme-toggle__icon--sun {
   transform: translate(-50%, -50%) scale(1);
 }
 
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-handle-blur {
+  display: inline-block;
+  max-width: 118px;
+  overflow: hidden;
+  color: var(--muted);
+  filter: blur(3.2px);
+  opacity: 0.82;
+  user-select: none;
+  white-space: nowrap;
+}
+
 .floating-glow {
   position: absolute;
   inset: auto;

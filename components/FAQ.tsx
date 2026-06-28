@@ -17,7 +17,7 @@ export function FAQ() {
       <div className="section-shell grid gap-8 lg:grid-cols-[0.72fr_1.28fr]">
         <SectionHeading
           eyebrow="FAQ"
-          title="Питання, які зазвичай виникають перед стартом"
+          title="Коротко про важливе перед заявкою"
         />
 
         <div className="grid gap-3">
